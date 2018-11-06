@@ -6,16 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
+
+    <title>Engenheiros do Futuro</title>
+    <link rel="shortcut icon" href="rocket.ico" type="image/x-icon"/>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-     <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
-    <!-- Compiled and minified JavaScript -->
-     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 </head>
 
 <body>
@@ -23,178 +21,99 @@
         <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
             <div class="mdl-layout__header-row portfolio-logo-row">
                 <span class="mdl-layout__title">
-                    <!-- <div class="portfolio-logo"></div> -->
-                    <span class="mdl-layout__title">Engenheiros do futuro</span>
+                    <div id="logo">
+                        <img class="portfolio-logo" src="images/rocket.png" >
+                        <span class="mdl-layout__title">Engenheiros do futuro</span>
+                    </div>
                 </span>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row ">
-                <div id="optionsDiv">
-                    <nav  id="options"class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                        <a class="mdl-navigation__link is-active" href="cursos.html">Cursos</a>
-                        <a class="mdl-navigation__link" href="disciplinas.html">Disciplinas</a>
-                    </nav>
-                </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="index.html">Cursos</a>
+                    <a class="mdl-navigation__link" href="disciplinas.html">Disciplinas</a>
+                </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                 <a class="mdl-navigation__link" href="index.html">Inicio</a>
-                <a class="mdl-navigation__link" href="cursos.html">Cursos</a>
+                <a class="mdl-navigation__link" href="index.html">Cursos</a>
                 <a class="mdl-navigation__link" href="disciplinas.html">Disciplinas</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width">
-                <!-- Portfolio card -->
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work01.jpg" border="0" alt="">
-                    </div> -->
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Engenharia de Software</h2>
+                        <div class="tituloCursos">Engenharia de Software</div>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                        Engenharia de software é uma área da computação voltada à especificação, desenvolvimento, manutenção e criação de software, com a aplicação de tecnologias e práticas de gerência de projetos e outras disciplinas, visando organização, produtividade e qualidade.
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="engenhariaSoftware.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
                 </div>
-                <!-- Portfolio card -->                
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work07.jpg" border="0" alt="">
-                    </div> -->
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Sunt nulla</h2>
+                        <div class="tituloCursos">Engenharia de Sistemas</div>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                        É a engenharia que desenvolve sistemas tecnológicos complexos – que integram outros sistemas e envolvem grande quantidade de variáveis. Este engenheiro está apto a atuar na análise, no projeto e na integração de sistemas complexos.
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="engenhariaSistemas.html"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
                 </div>
-                <!-- Portfolio card -->                
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                   <!--  <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work02.jpg" border="0" alt="">
-                    </div> -->
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Android.com website</h2>
+                        <div class="tituloCursos">Sistemas de Informação</div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    <div class="mdl-card__supporting-text">	
+                        Administrar o fluxo de informações que circulam por redes de computadores. Este profissional desenvolve o processamento, os sistemas de armazenamento e de recuperação de dados e disponibiliza esse material para usuários de redes, criando, adaptando e instalando programas para facilitar e organizar a consulta.
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="sistemasInformacao.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
                 </div>
-                <!-- Portfolio card -->                
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!--  <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work03.jpg" border="0" alt="">
-                    </div> -->
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Dashboard template</h2>
+                        <div class="tituloCursos">Engenharia da computação</div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    <div class="mdl-card__supporting-text">	
+                        Este engenheiro projeta e constrói computadores, periféricos (como mouse, teclado, câmera, cartão de memória) e sistemas computacionais. Ou seja, seu foco principal é o hardware. O bacharel desta área entende de placas e circuitos e pode criar sistemas digitais, computadorizados e robôs.
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="engenhariaComputacao.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
                 </div>
-                <!-- Portfolio card -->                
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!--  <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work04.jpg" border="0" alt="">
-                    </div> -->
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Text-heavy website</h2>
+                        <div class="tituloCursos">Jogos Digitais</div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    <div class="mdl-card__supporting-text">	
+                        O curso forma o profissional que dá suporte à criação de programas e ambientes de jogos, complementando o planejamento geral, desenvolvido pelo bacharel. Assim, o bacharel e o tecnólogo têm funções complementares: o primeiro, com uma visão estratégica dos jogos; o segundo, responsável direto pela produção dos games.
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="jogosDigitais.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
-                </div>
-                <!-- Portfolio card -->                
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work08.jpg" border="0" alt="">
-                    </div> -->
+                </div><div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Ex officia laborum</h2>
+                        <div class="tituloCursos">Ciência da computação</div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    <div class="mdl-card__supporting-text">	
+                        O bacharel da Ciência da Computação trabalha,na elaboração de programas de informática, para computadores ou dispositivos móveis. Analisa as necessidades dos usuários, desenvolve softwares e aplicativos, gerencia equipes de criação e instala sistemas de computação. 
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
-                    </div>
-                </div>
-                <!-- Portfolio card -->                
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work05.jpg" border="0" alt="">
-                    </div> -->
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Stand-alone article</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
-                    </div>
-                </div>
-                <!-- Portfolio card -->                
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work06.jpg" border="0" alt="">
-                    </div> -->
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">MDL website</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
-                    </div>
-                </div>
-                <!-- Portfolio card -->                
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <!-- <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work09.jpg" border="0" alt="">
-                    </div> -->
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Consequat ut quis</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
+                        <a href="cienciaComputacao.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
                 </div>
             </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Simple portfolio website</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
+            
         </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
+
 
 </html>
