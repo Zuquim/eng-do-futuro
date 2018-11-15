@@ -32,46 +32,13 @@
                     </div>
                 </span>
             </div>
-
-
-              <nav class="nav-extended white pushpin z-depth-3">
-                <div class="nav-wrapper container">
-                  <form action="" class="browser-default right">
-                    <input id="search-input" placeholder="Search" type="text" class="browser-default search-field" name="q" value="" autocomplete="off" aria-label="Search box">
-                    <label for="search-input"><i class="material-icons search-icon">search</i></label> 
-                    <i class="material-icons search-close-icon">cancel</i>
-                    <div class="search-popup">
-                      <div class="search-content">
-                        <label class="search-heading">Most Visited</label>
-                        <ul class="popup-list">
-                          <li class=""><a class="grey-text" href="#">Google</a></li>
-                          <li class=""><a class="grey-text" href="#">Apple</a></li><li class=""><a class="grey-text" href="#">Microsoft</a></li><li class=""><a class="grey-text" href="#">Github</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </form>
-            
-                </div>
-                  <div class="my-grey">
-                  <div class="nav-content container">
-                    <ul class="tabs tabs-transparent">
-                      <li id="scale" class="nav-btn top-margin scale-transition scale-out "><a  class="waves-effect waves-light btn blue search-hide" href="#">this will hide!</a></li>
-                    </ul>
-                </div>
-                
-              </div>
-              
-              </nav>
-
-
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
             <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                     <a class="mdl-navigation__link is-active" href="index.html">Cursos</a>
                     <a class="mdl-navigation__link" href="disciplinas.html">Disciplinas</a>
                 </nav>
             </div>
+            <input type="text" id="searchInput" onkeyup="searchCards()" placeholder="Digite o nome de um curso...">
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
@@ -81,10 +48,10 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width cursos">
+            <div class="mdl-grid portfolio-max-width cursos" id="cards">
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Engenharia de Software</div>
+                        <div class="tituloCursos titulo">Engenharia de Software</div>
                     </div>
                     <div class="mdl-card__supporting-text">
                         Engenharia de software é uma área da computação voltada à especificação, desenvolvimento, manutenção e criação de software, com a aplicação de tecnologias e práticas de gerência de projetos e outras disciplinas, visando organização, produtividade e qualidade.
@@ -95,7 +62,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Engenharia de Sistemas</div>
+                        <div class="tituloCursos titulo">Engenharia de Sistemas</div>
                     </div>
                     <div class="mdl-card__supporting-text">
                         É a engenharia que desenvolve sistemas tecnológicos complexos – que integram outros sistemas e envolvem grande quantidade de variáveis. Este engenheiro está apto a atuar na análise, no projeto e na integração de sistemas complexos.
@@ -106,7 +73,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Sistemas de Informação</div>
+                        <div class="tituloCursos titulo">Sistemas de Informação</div>
                     </div>
                     <div class="mdl-card__supporting-text">	
                         Administrar o fluxo de informações que circulam por redes de computadores. Este profissional desenvolve o processamento, os sistemas de armazenamento e de recuperação de dados e disponibiliza esse material para usuários de redes, criando, adaptando e instalando programas para facilitar e organizar a consulta.
@@ -117,7 +84,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Engenharia da computação</div>
+                        <div class="tituloCursos titulo">Engenharia da computação</div>
                     </div>
                     <div class="mdl-card__supporting-text">	
                         Este engenheiro projeta e constrói computadores, periféricos (como mouse, teclado, câmera, cartão de memória) e sistemas computacionais. Ou seja, seu foco principal é o hardware. O bacharel desta área entende de placas e circuitos e pode criar sistemas digitais, computadorizados e robôs.
@@ -128,7 +95,7 @@
                 </div>
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Jogos Digitais</div>
+                        <div class="tituloCursos titulo">Jogos Digitais</div>
                     </div>
                     <div class="mdl-card__supporting-text">	
                         O curso forma o profissional que dá suporte à criação de programas e ambientes de jogos, complementando o planejamento geral, desenvolvido pelo bacharel. Assim, o bacharel e o tecnólogo têm funções complementares: o primeiro, com uma visão estratégica dos jogos; o segundo, responsável direto pela produção dos games.
@@ -136,9 +103,10 @@
                     <div class="mdl-card__actions mdl-card--border">
                         <a href="jogosDigitais.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Conheça mais</a>
                     </div>
-                </div><div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__title">
-                        <div class="tituloCursos">Ciência da computação</div>
+                        <div class="tituloCursos titulo">Ciência da computação</div>
                     </div>
                     <div class="mdl-card__supporting-text">	
                         O bacharel da Ciência da Computação trabalha,na elaboração de programas de informática, para computadores ou dispositivos móveis. Analisa as necessidades dos usuários, desenvolve softwares e aplicativos, gerencia equipes de criação e instala sistemas de computação. 
@@ -154,28 +122,5 @@
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="searchbar.js"></script>
 </body>
-
-<script>
-    function myFunction() {
-      // Declare variables 
-      var input, filter, table, tr, td, i;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("cursos");
-      tr = table.getElementsByTagName("mdl-card");
-    
-      // Loop through all table rows, and hide those who don't match the search query
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("tituloCursos")[0];
-        if (td) {
-          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        } 
-      }
-    }
-</script>
 
 </html>
